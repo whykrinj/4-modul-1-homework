@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Manager</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-base-100 min-h-screen flex items-center justify-center">
+  <div class="bg-white p-8 rounded-xl shadow-lg w-full max-w-2xl">
+    <!-- Заголовок -->
+    <h1 class="text-3xl font-semibold text-center text-gray-800 mb-8">Contact Manager</h1>
+
+    <!-- Форма для добавления контакта -->
+    <div class="flex gap-4 mb-6">
+      <input id="name-input" type="text" placeholder="Enter Name" 
+        class="flex-1 p-4 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 text-lg shadow-sm">
+      <input id="number-input" type="text" placeholder="Enter Number"
+        class="flex-1 p-4 border-2 border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 text-lg shadow-sm">
+      <button id="add-contact-btn" class="bg-blue-500 text-white p-4 rounded-lg shadow-lg hover:bg-blue-600 transition">Add Contact</button>
+    </div>
+
+    <!-- Список контактов -->
+    <div id="contacts-list" class="space-y-4">
+      <!-- Контакты будут добавляться динамически -->
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
