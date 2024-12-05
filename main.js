@@ -42,7 +42,7 @@ async function addContact() {
   const number = document.getElementById('number-input').value;
 
   if (!name || !number) {
-    alert('Please fill in both fields.');
+    alert('Дополните строки...');
     return;
   }
 
